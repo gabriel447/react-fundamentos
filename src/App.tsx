@@ -1,25 +1,16 @@
 import { Layout } from './components/Layout';
-import { Card } from './components/Card';
 
 function App() {
   return (
     <Layout>
-      Hello World!
-      <Card
-        title='React'
-        paragraph='Frontend'
-        id={1}
-      />
-      <Card
-        title='Typescript'
-        paragraph='Backend'
-        id={1}
-      />
-      <Card
-        title='SQL'
-        paragraph='Banco de Dados'
-        id={1}
-      />
+      <h1>Faça login</h1>
+      <label htmlFor='emailInput'>Email</label>
+      <input id='emailInput' type='email' />
+      <label htmlFor='passwordInput'>Senha</label>
+      <input id='passwordInput' type='password' />
+      <button>
+        Entrar
+      </button>
     </Layout>
   );
 }
